@@ -1,6 +1,6 @@
 %define name gphone
 %define version 0.5.2
-%define release %mkrel 9
+%define release %mkrel 10
 
 Summary: Gphone is an internet telephone
 Name: %{name}
@@ -48,11 +48,17 @@ rm -rf $RPM_BUILD_ROOT
 
 %makeinstall
 
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat > $RPM_BUILD_ROOT%{_menudir}/%{name} << EOF
-?package(%{name}): needs=x11 section="Multimedia/Sound" \
-title=Gphone longtitle="Internet telephone" command=gphone \
-icon="other_networking.png"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
+cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
+[Desktop Entry]
+Encoding=UTF-8
+Name=Gphone
+Comment=Internet telephone
+Exec=%{_bindir}/%{name} 
+Icon=other_networking
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;AudioVideo;Audio;X-MandrivaLinux-Multimedia-Sound;
 EOF
 
 %post
@@ -68,4 +74,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc ChangeLog NEWS README TODO AUTHORS
 %{_bindir}/*
-%{_menudir}/*
+%{_datadir}/applications/mandriva-%{name}.desktop
+
