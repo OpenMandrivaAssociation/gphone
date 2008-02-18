@@ -2,7 +2,7 @@
 %define version 0.5.2
 %define release %mkrel 10
 
-Summary: Gphone is an internet telephone
+Summary: Internet telephone
 Name: %{name}
 Version: %{version}
 Release: %{release}
