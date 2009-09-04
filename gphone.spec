@@ -1,6 +1,6 @@
 %define name gphone
 %define version 0.5.2
-%define release %mkrel 13
+%define release %mkrel 14
 
 Summary: Internet telephone
 Name: %{name}
