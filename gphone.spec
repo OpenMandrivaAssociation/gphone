@@ -79,3 +79,67 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 %{_datadir}/applications/mandriva-%{name}.desktop
 
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.5.2-15mdv2011.0
++ Revision: 619235
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0.5.2-14mdv2010.0
++ Revision: 429293
+- rebuild
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0.5.2-13mdv2009.0
++ Revision: 246535
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Mon Feb 18 2008 Thierry Vignaud <tv@mandriva.org> 0.5.2-11mdv2008.1
++ Revision: 170874
+- rebuild
+- fix "foobar is blabla" summary (=> "blabla") so that it looks nice in rpmdrake
+- kill re-definition of %%buildroot on Pixel's request
+- kill desktop-file-validate's 'warning: key "Encoding" in group "Desktop Entry" is deprecated'
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Herton Ronaldo Krzesinski <herton@mandriva.com.br>
+    - Switch to XDG menu.
+    - Import gphone
+
+
+
+* Thu Dec 15 2005 Lenny Cartier <lenny@mandriva.com> 0.5.2-9mdk
+- rebuild
+
+* Fri Jul 23 2004 Marcel Pol <mpol@mandrake.org> 0.5.2-8mdk
+- again build against new slang
+
+* Wed Jul 21 2004 Marcel Pol <mpol@mandrake.org> 0.5.2-7mdk
+- build against new slang
+- quiet setup
+
+* Mon Feb 23 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.5.2-6mdk
+- rebuild
+
+* Tue Jan 28 2003 Lenny Cartier <lenny@mandrakesoft.com> 0.5.2-5mdk
+- rebuild
+
+* Wed Jan 30 2002 Lenny Cartier <lenny@mandrakesoft.com> 0.5.2-4mdk
+- icon
+
+* Fri Jul 20 2001  Lenny Cartier <lenny@mandrakesoft.com> 0.5.2-3mdk
+- rebuild
+
+* Wed Jan 10 2001 Lenny Cartier <lenny@mandrakesoft.com> 0.5.2-2mdk
+- rebuild
+- url
+
+* Fri Oct 20 2000 Frederic Lepied <flepied@mandrakesoft.com> 0.5.2-1mdk
+- first version
+
+# gphone.spec ends here
