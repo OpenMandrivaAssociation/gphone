@@ -8,7 +8,7 @@ Version: %{version}
 Release: %{release}
 Source0: %{name}-%{version}.tar.bz2
 License: GPL
-URL: http://gphone.sourceforge.net/
+URL: https://gphone.sourceforge.net/
 Group: Sound
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: gsm-devel gtk+-devel slang-devel popt-devel
