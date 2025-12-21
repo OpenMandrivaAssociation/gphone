@@ -11,6 +11,11 @@ License: GPL
 URL: https://gphone.sourceforge.net/
 Group: Sound
 BuildRoot: %{_tmppath}/%{name}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: gsm-devel gtk+-devel slang-devel popt-devel
 
 %description
